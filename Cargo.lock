@@ -195,7 +195,7 @@ dependencies = [
 
 [[package]]
 name = "dl_edge_driver"
-version = "0.1.0"
+version = "0.0.1"
 dependencies = [
  "anyhow",
  "fetch_edge_driver",
@@ -223,8 +223,8 @@ dependencies = [
 
 [[package]]
 name = "fetch_edge_driver"
-version = "0.1.0"
-source = "git+https://github.com/aoki-soft/fetch_edge_driver.git?rev=c4ff0f3b7f60cdfffabe73658ed29e1949329210#c4ff0f3b7f60cdfffabe73658ed29e1949329210"
+version = "0.0.1"
+source = "git+https://github.com/aoki-soft/fetch_edge_driver.git?tag=0.0.1#f18f6c65442421baeb1e56409da9f56d73a7ae29"
 dependencies = [
  "anyhow",
  "bytes",
