@@ -3,10 +3,18 @@ name = "dl_edge_driver"
 authors = ["aoki"]
 version = "0.1.0"
 edition = "2021"
-about = "edge driver download tool"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 anyhow = "*"
 fetch_edge_driver = { git = "https://github.com/aoki-soft/fetch_edge_driver.git", rev = "c4ff0f3b7f60cdfffabe73658ed29e1949329210" }
+
+[build-dependencies]
+winres = "0.1.12"
+winapi = { version = "0.3.9", features = [ "winnt" ] }
+
+[package.metadata.winres]
+OriginalFilename = "dl_edge_driver.exe"
+FileDescription = "edge driver ダウンロードツール"
+LegalCopyright = "Copyright © 2022 aoki"
