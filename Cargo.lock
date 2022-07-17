@@ -195,7 +195,7 @@ dependencies = [
 
 [[package]]
 name = "dl_edge_driver"
-version = "0.0.2"
+version = "0.0.3"
 dependencies = [
  "anyhow",
  "fetch_edge_driver",
