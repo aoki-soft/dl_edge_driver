@@ -16,5 +16,8 @@ fn main() -> Result<()> {
             driver_path.to_str().context("Edge Driverパスの文字列化に失敗した")?);
         }
     }
+    println!("Enterを押すと終了します");
+    let mut data = String::new();
+    std::io::stdin().read_line(&mut data).context("コマンドライン引数読み込みに失敗した")?;
     Ok(())
 }
